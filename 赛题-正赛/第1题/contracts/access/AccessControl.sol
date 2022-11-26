@@ -20,6 +20,7 @@ import "../utils/introspection/ERC165.sol";
  * using `public constant` hash digests:
  *
  * ```
+ * bytes32 public constant MY_ROLE = keccak256("MY_ROLE");
  * ```
  *
  * Roles can be used to represent a set of permissions. To restrict access to a
