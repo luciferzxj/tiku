@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"赛题-预赛/第三题/Merkle.sol": "figure"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"赛题-预赛/第三题/Merkle.sol": {
+			"keccak256": "0x4ce6cd37fd54e3c6436d0ab3e730b7215ec69bd9016392b1b623fb15ef98ad4b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://eae1f6debb50dac7de120dd1ed6c575212b9a522d8084184c56559a5f92523fc",
+				"dweb:/ipfs/QmNVHs2ecdHinPSViBh8gNP6ouwPVMbiruEnqT5gUWkanT"
+			]
+		}
+	},
+	"version": 1
+}

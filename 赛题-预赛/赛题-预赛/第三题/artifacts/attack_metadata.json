@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "root",
+						"type": "bytes32"
+					}
+				],
+				"name": "att",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "att2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "figure",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "init",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"赛题-预赛/第三题/attack.sol": "attack"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"赛题-预赛/第三题/Merkle.sol": {
+			"keccak256": "0xd646ee9ce219bfef60dfc5762a1e8dbd44bccc3f8cadc3f2c98069709eb8d8d8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f5dc4061d008b99eca79810a6b92cc872ee995b4371961724f8127c0bdeb7add",
+				"dweb:/ipfs/QmW1zbzKa3Qm4LuY9245fYMyDCnnLReYAv4eYNnNMQUzHg"
+			]
+		},
+		"赛题-预赛/第三题/attack.sol": {
+			"keccak256": "0xbb30bdb093cc80586fc7492a75455c3d5ed3b6a105f5335f795b60ccb0953ec5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://138153268edb2de506e3e5c01924bd51b0cd10daf209426ab9a8fb51793eed0e",
+				"dweb:/ipfs/Qmew4p695gp7zsaff8wAiFhAp9zwxcYvWEfXj33padeTqD"
+			]
+		}
+	},
+	"version": 1
+}

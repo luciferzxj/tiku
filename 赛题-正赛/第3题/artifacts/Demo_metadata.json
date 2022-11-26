@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "weth",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "bank",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "isCompleted",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"第3题/Demo.sol": "Demo"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"第3题/Demo.sol": {
+			"keccak256": "0xc90130ba57e0473d5186e6edbd0f849f77f7df2f2b829f56de753c5917d9de6e",
+			"urls": [
+				"bzzr://bbcc98f132492d9315bf8b2f07020b2d233ea520c58147242956c75c25866f7b"
+			]
+		},
+		"第3题/FakeWETH.sol": {
+			"keccak256": "0x275661ef4317a67cff91c52d1bc6880d933cf97efeb82e0dd719c6b6c0df38c6",
+			"urls": [
+				"bzzr://ceed0af9390e3f1e8d6d32ed12b96052e0b20127156742a4a8da6bfde204a0f5"
+			]
+		}
+	},
+	"version": 1
+}

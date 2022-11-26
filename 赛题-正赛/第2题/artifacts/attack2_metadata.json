@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"第2题/ApproveMain.sol": "attack2"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"第2题/ApproveMain.sol": {
+			"keccak256": "0xa61c2806a3ff394ae5e1c311cc86c274e4c693cb5b8dd6f6a91f4780d4a76d0f",
+			"urls": [
+				"bzz-raw://03a4c1a06c55347a12cc52a831757bc0b97fb33d233a95b8737e55feb3efb42a",
+				"dweb:/ipfs/Qmcg8AXP6VHPVgMoUuwQ4Fo8tB4eynneSBhAoopfmeGGhJ"
+			]
+		}
+	},
+	"version": 1
+}
