@@ -105,3 +105,8 @@ contract Storage1 {
         _;
     }
 }
+contract attack{
+    function figure(address _addr)public view returns(bytes32){
+        return keccak256(abi.encode(_addr,2));
+    }
+}

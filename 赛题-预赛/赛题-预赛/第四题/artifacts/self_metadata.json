@@ -1,0 +1,81 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_addr",
+						"type": "address"
+					}
+				],
+				"name": "selfd",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"赛题-预赛/第四题/OwnerBuy.sol": "self"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"赛题-预赛/第四题/OwnerBuy.sol": {
+			"keccak256": "0x6c5b72099bc5f9740cbeb28650f50b1291a1eca5fbdbf6611673c9c8bcf2ba41",
+			"urls": [
+				"bzz-raw://f123693ee63491f5f4e4f8a62829af806c8814e5bdaaf6ce34ce08dbf396c33d",
+				"dweb:/ipfs/QmPoszddSPRrmMRMFwfT9cXvCZmLbSEobQwqV2p1qEvd99"
+			]
+		},
+		"赛题-预赛/第四题/contracts/ERC20.sol": {
+			"keccak256": "0x91a3b598fc86ea761b5a8296e26690e460e78d1606eb518994e5c2ba15fa194f",
+			"urls": [
+				"bzz-raw://f2e312a214c618db25822c5af3c0ea4811c7f42422b0d1051d468adbfbb53774",
+				"dweb:/ipfs/QmdG5we7FRV1TFopjEvhSb63e5K2HUE3Y5fcdcR3CcuDe4"
+			]
+		},
+		"赛题-预赛/第四题/contracts/ERC20Detailed.sol": {
+			"keccak256": "0xe20fce8726ac6988a627b4abae707647c8c46d9b5be24e0e085c718e854d9e34",
+			"urls": [
+				"bzz-raw://99a90f29bbd180bc88edf71c0583ec07d109bcfae5530aaffee434d0188c33e8",
+				"dweb:/ipfs/Qmb2AKkdtcH2eWtXtaaSqABrLtBgcc9ppkn4iJPP89NNKp"
+			]
+		},
+		"赛题-预赛/第四题/contracts/IERC20.sol": {
+			"keccak256": "0xd45135fede71fe4b2f06ccc22c459f880912785065a13f5ebf85ebe3d07d632e",
+			"urls": [
+				"bzz-raw://e38e11ed61a168499a2128f65c4248f9cb76a12fb0c9f2ae0e0e0ade46c5ba9f",
+				"dweb:/ipfs/QmdAEvzLRsCtT6Yp1ruyymfaQ4hDtQMmBFjYY9MB4YQSBm"
+			]
+		},
+		"赛题-预赛/第四题/contracts/SafeMath.sol": {
+			"keccak256": "0x11a066623aa9848c105e3610dd03f30d87881271d8da83a3974f898d5314025c",
+			"urls": [
+				"bzz-raw://76812a0f7047a8d98e291415723003b6238024ef37572453dcd96c70c946f9a7",
+				"dweb:/ipfs/Qmf8SQN4J9ghTq3mVjxenmVAZtR8RnqvdfDvR5jma1gpJk"
+			]
+		}
+	},
+	"version": 1
+}

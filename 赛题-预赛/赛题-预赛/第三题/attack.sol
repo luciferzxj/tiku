@@ -4,6 +4,7 @@ pragma solidity ^0.7.0;
 import "./Merkle.sol";
 contract attack{
     Merkle merk;
+    
     constructor(){
         
     }

